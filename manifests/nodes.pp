@@ -3,7 +3,7 @@ class base {
   include banner
 }
 
-node 'megaman' {
+node 'megaman.*' {
   include base
   #include bind
 }
