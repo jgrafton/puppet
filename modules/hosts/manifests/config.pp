@@ -65,4 +65,10 @@ class hosts::config {
     ip           => '192.168.1.203',
     host_aliases => 'debian',
   }
+
+  # openindiana 
+  host { 'oi.tino':
+    ip           => '192.168.1.204',
+    host_aliases => 'oi',
+  }
 }
