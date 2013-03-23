@@ -18,3 +18,8 @@ node /sebian.*/ {
 node /ldap.*/ {
   include base
 }
+
+# pod ubuntu workstation
+node /pod.*/ {
+  include base
+}
