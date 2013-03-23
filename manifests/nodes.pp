@@ -35,6 +35,12 @@ node /ldap.*/ {
   include base
 }
 
+# openindiana vm on orion
+node /oi.*/ {
+  include ssh_keys
+  include base
+}
+
 ### physical workstations
 # pod ubuntu workstation
 node /pod.*/ {
