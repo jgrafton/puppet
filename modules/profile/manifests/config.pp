@@ -13,7 +13,7 @@ class profile::config {
   file {"${home_dir}/.bash_profile":
     ensure  => present,
     require => User[$user],
-    source  => file('profile/bash_profile'),
+    source  => "puppet:///modules/profile/bash_profile"),
   }
 
   file {"${home_dir}/${user}/.screenrc":
