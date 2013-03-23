@@ -16,13 +16,13 @@ class profile::config {
     source  => "puppet:///modules/profile/bash_profile",
   }
 
-  file {"${home_dir}/${user}/.screenrc":
+  file {"${home_dir}/.screenrc":
     ensure  => present,
     require => User[$user],
     source  => template('profile/screenrc.erb'),
   }
 
-  file {"${home_dir}/${user}/.vimrc":
+  file {"${home_dir}/.vimrc":
     ensure  => present,
     require => User[$user],
     source  => "puppet:///modules/profile/vimrc",
