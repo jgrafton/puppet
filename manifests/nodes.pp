@@ -3,8 +3,14 @@ class base {
 }
 
 ### cloud vms
-# amazon web start cloud
+# amazon cloud
 node /ip-10-170-22-206/ {
+  include ssh_keys
+  include base
+}
+
+# joyent cloud
+node /6dab87a4-e83e-4f9f-8748-48ff53056070.*/ {
   include ssh_keys
   include base
 }
