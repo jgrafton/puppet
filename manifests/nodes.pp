@@ -35,6 +35,13 @@ node /ldap.*/ {
   include base
 }
 
+# centos vm on orion
+#node /cd030bbc-9b21-4341-8be4-5d9f3241b7e9/ {
+node /161884f4-7a94-4050-bcc4-53ad5d205a87.*/ {
+  include ssh_keys
+  include base
+}
+
 # openindiana vm on orion
 node /oi.*/ {
   include ssh_keys
