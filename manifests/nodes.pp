@@ -1,5 +1,6 @@
 class base {
   include banner
+  include profile
 }
 
 ### cloud vms
