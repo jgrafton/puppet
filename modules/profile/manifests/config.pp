@@ -25,7 +25,7 @@ class profile::config {
   file {"${home_dir}/${user}/.vimrc":
     ensure  => present,
     require => User[$user],
-    source  => template('profile/vimrc.erb'),
+    source  => "puppet:///modules/profile/vimrc",
   }
 
 }
