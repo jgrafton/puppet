@@ -1,8 +1,16 @@
 class base {
-  #include graftons
+  include ssh_keys
   include banner
 }
 
+
+### cloud vms
+# amazon web start cloud
+node /ip-10-170-22-206/ {
+  include base
+}
+
+### home vms
 # joyent smartos zone on orion
 node /megaman.*/ {
   include base
@@ -19,6 +27,8 @@ node /ldap.*/ {
   include base
 }
 
+
+### physical workstations
 # pod ubuntu workstation
 node /pod.*/ {
   include base
