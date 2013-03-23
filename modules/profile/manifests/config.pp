@@ -11,21 +11,21 @@ class profile::config {
   }
 
   file {"${home_dir}/.bash_profile":
-    ensure => present,
+    ensure  => present,
     require => User[$user],
-    source => template('profile/bash_profile.erb'),
+    source  => file('profile/bash_profile'),
   }
 
   file {"${home_dir}/${user}/.screenrc":
-    ensure => present,
+    ensure  => present,
     require => User[$user],
-    source => template('profile/screenrc.erb'),
+    source  => template('profile/screenrc.erb'),
   }
 
   file {"${home_dir}/${user}/.vimrc":
-    ensure => present,
+    ensure  => present,
     require => User[$user],
-    source => template('profile/vimrc.erb'),
+    source  => template('profile/vimrc.erb'),
   }
 
 }
