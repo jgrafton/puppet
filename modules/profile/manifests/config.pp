@@ -19,7 +19,7 @@ class profile::config {
   file {"${home_dir}/.screenrc":
     ensure  => present,
     require => User[$user],
-    source  => template('profile/screenrc.erb'),
+    source  => "puppet:///modules/profile/screenrc",
   }
 
   file {"${home_dir}/.vimrc":
