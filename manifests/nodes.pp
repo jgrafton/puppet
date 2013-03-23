@@ -23,3 +23,8 @@ node /ldap.*/ {
 node /pod.*/ {
   include base
 }
+
+# macbook pro
+node /graftons-macbook-pro.*/ {
+  include base
+}
