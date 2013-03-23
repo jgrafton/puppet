@@ -38,6 +38,7 @@ node /ldap.*/ {
 ### physical workstations
 # pod ubuntu workstation
 node /pod.*/ {
+  include hosts
   include ssh_keys
   include base
 }
