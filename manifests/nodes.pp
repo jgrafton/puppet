@@ -8,7 +8,12 @@ node /megaman.*/ {
   include base
 }
 
-# debian virtual machine on Sara's iMac
+# squeeze vm on Sara's iMac
 node /sebian.*/ {
+  include base
+}
+
+# squeeze vm on orion
+node /cd030bbc-9b21-4341-8be4-5d9f3241b7e9/ {
   include base
 }
