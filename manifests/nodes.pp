@@ -45,5 +45,6 @@ node /pod.*/ {
 
 # macbook pro
 node /graftons-macbook-pro.*/ {
+  include hosts
   include base
 }
