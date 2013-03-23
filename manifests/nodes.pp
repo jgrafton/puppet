@@ -3,7 +3,12 @@ class base {
   include banner
 }
 
+# joyent smartos zone on orion
 node /megaman.*/ {
   include base
-  #include bind
+}
+
+# debian virtual machine on Sara's iMac
+node /sebian.*/ {
+  include base
 }
