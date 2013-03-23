@@ -1,0 +1,12 @@
+# bash_profile
+
+# set prompt
+export PS1="[\u@\h \W]\$ "
+
+# set environment variables
+PAGER=less
+
+# set key bindings to vi on the command line
+set -o vi
+
+export PATH=/opt/local/bin:$PATH
