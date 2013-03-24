@@ -1,6 +1,6 @@
 class banner {
   case $::hardwaremodel {
-    armv61: {
+    armv6l: {
       include banner::config_raspberrypi
     }
     default: {
