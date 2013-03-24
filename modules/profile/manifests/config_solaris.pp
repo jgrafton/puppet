@@ -24,5 +24,4 @@ class profile::config_solaris {
     owner   => jgrafton,
     source  => 'puppet:///modules/profile/vimrc',
   }
-
 }

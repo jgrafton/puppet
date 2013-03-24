@@ -1,4 +1,4 @@
-class profile::config {
+class profile::config_linux {
   $user='jgrafton'
 
   file {"/home/${user}/.bash_profile":
