@@ -67,5 +67,6 @@ node /.*macbook.*/ {
 # raspberrypi
 node /raspberrypi.*/ {
   include hosts
+  include ssh_keys
   include base  
 }
