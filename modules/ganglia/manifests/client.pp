@@ -83,6 +83,7 @@ class ganglia::client (
         hasstatus => false,
         status    => "ps -ef | grep gmond | grep ${user} | grep -qv grep"
       }
+    }
     'ubuntu': {
       $ganglia_client_pkg     = 'ganglia-monitor'
       $ganglia_client_service = 'ganglia-monitor'
