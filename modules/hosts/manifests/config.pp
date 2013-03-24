@@ -71,4 +71,10 @@ class hosts::config {
     ip           => '192.168.1.204',
     host_aliases => 'oi',
   }
+  
+  # Sara's iMac
+  host { 'saramac.tino':
+    ip           => '192.168.1.52',
+    host_aliases => 'saramac',
+  }
 }
