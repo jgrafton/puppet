@@ -37,6 +37,7 @@ node /ldap.*/ {
   include base
   include ganglia
   include ganglia::server
+  include ganglia::webserver
 }
 
 # centos vm on orion
