@@ -1,6 +1,12 @@
 class users::config {
-  user { "jgrafton":
-    ensure => present,
-    shell  => "/bin/bash",
+case $::operatingsystem {
+  Darwin: '' {
+
+  }
+  Default: '' {
+    user { "jgrafton":
+      ensure => present,
+      shell  => "/bin/bash",
+    }
   }
 }
