@@ -28,6 +28,8 @@ node /megaman.*/ {
 node /sebian.*/ {
   include ssh_keys
   include base
+  include ganglia
+  include ganglia::client
 }
 
 # squeeze vm on orion
