@@ -12,9 +12,9 @@
 #
 class ganglia::webserver {
 
-  $ganglia_webserver_pkg = $::osfamily ? {
-    Debian => 'ganglia-webfrontend',
-    RedHat => 'ganglia-web',
+  $ganglia_webserver_pkg = $::operatingsystem ? {
+    debian => 'ganglia-webfrontend',
+    centos => 'ganglia-web',
     default => fail("Module ${module_name} is not supported on
 ${::operatingsystem}")
   }
