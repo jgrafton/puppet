@@ -83,6 +83,14 @@ class ganglia::client (
         hasstatus => false,
         status    => "ps -ef | grep gmond | grep ${user} | grep -qv grep"
       }
+    'ubuntu': {
+      $ganglia_client_pkg     = 'ganglia-monitor'
+      $ganglia_client_service = 'ganglia-monitor'
+      $ganglia_lib_dir        = '/usr/lib/ganglia'
+      Service[$ganglia_client_service] {
+        hasstatus => false,
+        status    => "ps -ef | grep gmond | grep ${user} | grep -qv grep"
+      }     
     }
     'centos': {
       # requires epel repo
