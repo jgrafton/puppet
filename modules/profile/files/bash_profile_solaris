@@ -8,8 +8,8 @@ export PS1="\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\
 alias ls='ls --color'
 
 # set environment variables
-EDITOR=vi
-PAGER=less
+export EDITOR=vi
+export PAGER=less
 
 # set key bindings to vi on the command line
 set -o vi
