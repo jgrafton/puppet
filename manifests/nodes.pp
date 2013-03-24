@@ -35,6 +35,8 @@ node /sebian.*/ {
 node /ldap.*/ {
   include ssh_keys
   include base
+  include ganglia
+  include ganglia::server
 }
 
 # centos vm on orion
