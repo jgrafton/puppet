@@ -47,6 +47,8 @@ node /ldap.*/ {
 node /161884f4-7a94-4050-bcc4-53ad5d205a87.*/ {
   include ssh_keys
   include base
+  include ganglia
+  include ganglia::client
 }
 
 # openindiana vm on orion
@@ -74,4 +76,6 @@ node /raspberrypi.*/ {
   include hosts
   include ssh_keys
   include base  
+  include ganglia
+  include ganglia::client
 }
