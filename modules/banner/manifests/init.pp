@@ -1,3 +1,10 @@
 class banner {
-  include banner::config
+  case $::hardwaremodel {
+    armv61: {
+      include banner::config_raspberrypi
+    }
+    default: {
+      include banner::config
+    }
+  }
 }

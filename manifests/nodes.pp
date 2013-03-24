@@ -63,3 +63,9 @@ node /.*macbook.*/ {
   include hosts
   include base
 }
+
+# raspberrypi
+node /raspberrypi.*/ {
+  include hosts
+  include base  
+}
