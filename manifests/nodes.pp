@@ -63,6 +63,8 @@ node /pod.*/ {
   include hosts
   include ssh_keys
   include base
+  include ganglia
+  include ganglia::client 
 }
 
 # macbook pro
