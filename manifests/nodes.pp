@@ -2,6 +2,7 @@ class base {
   include banner
   include profile
   include users
+  include hosts
 }
 
 ### cloud vms
@@ -60,24 +61,21 @@ node /oi.*/ {
 ### physical workstations
 # pod ubuntu workstation
 node /pod.*/ {
-  include hosts
-  include ssh_keys
   include base
+  include ssh_keys
   include ganglia
   include ganglia::client 
 }
 
 # macbook pro
 node /.*macbook.*/ {
-  include hosts
   include base
 }
 
 # raspberrypi
 node /raspberrypi.*/ {
-  include hosts
-  include ssh_keys
   include base  
+  include ssh_keys
   include ganglia
   include ganglia::client
 }
