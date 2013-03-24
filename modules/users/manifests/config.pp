@@ -1,9 +1,8 @@
 class users::config {
   case $::operatingsystem {
-    Darwin: '' {
-      $passingtime='blah'
+    Darwin: {
     }
-    Default: '' {
+    Default: {
       user { "jgrafton":
         ensure => present,
         shell  => "/bin/bash",
