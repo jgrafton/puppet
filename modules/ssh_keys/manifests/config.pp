@@ -12,7 +12,7 @@ class ssh_keys::config {
 
   file { "${home_dir}/.ssh/authorized_keys":
     ensure  => present,
-    owner   => ${user},
+    owner   => $user,
     mode    => 0600,
     content => template('ssh_keys/authorized_keys.erb'),
   }
