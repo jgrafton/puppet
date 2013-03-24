@@ -74,7 +74,7 @@ class ganglia::client (
   $user = 'ganglia'
   ) {
 
-  case $::osfamily {
+  case $::operatingsystem {
     'debian': {
       $ganglia_client_pkg     = 'ganglia-monitor'
       $ganglia_client_service = 'ganglia-monitor'
