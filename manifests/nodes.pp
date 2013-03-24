@@ -73,9 +73,9 @@ node /.*macbook.*/ {
 }
 
 # Sara's iMac
-node /.*macbook.*/ {
-  include ssh_keys
+node /saramac.*/ {
   include base
+  include ssh_keys
 }
 
 # raspberrypi
