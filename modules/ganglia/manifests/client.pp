@@ -102,6 +102,12 @@ class ganglia::client (
         default          => '/usr/lib/ganglia',
       }
     }
+    'solaris': {
+      # requires joyent smartos
+      $ganglia_client_pkg     = 'ganglia-monitor-core'
+      $ganglia_client_service = 'gmond'
+      $ganglia_lib_dir        = '/opt/local/lib/ganglia/'
+    }
     default:  {fail('no known ganglia monitor package for this OS')}
   }
 
