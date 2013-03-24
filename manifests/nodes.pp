@@ -35,7 +35,7 @@ node /sebian.*/ {
 
 # squeeze vm on orion
 #node /cd030bbc-9b21-4341-8be4-5d9f3241b7e9/ {
-node /ldap.*/ {
+node /(ldap.*|debian.*)/ {
   include ssh_keys
   include base
   include ganglia
