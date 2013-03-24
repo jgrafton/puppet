@@ -14,4 +14,4 @@ PAGER=less
 # set key bindings to vi on the command line
 set -o vi
 
-export PATH=/opt/local/bin:$PATH
+export PATH=/opt/local/gnu/bin:/opt/local/bin:$PATH
