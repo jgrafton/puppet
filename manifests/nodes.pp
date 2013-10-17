@@ -59,12 +59,19 @@ node /oi.*/ {
 }
 
 ### physical workstations
-# pod ubuntu workstation
-node /pod.*/ {
+
+# pod ubuntu workstation (old system)
+#node /pod.*/ {
+#  include base
+#  include ssh_keys
+#  include ganglia
+#  include ganglia::client 
+#}
+
+# pod OpenIndiana development workstation
+node /pod/ {
   include base
   include ssh_keys
-  include ganglia
-  include ganglia::client 
 }
 
 # macbook pro
