@@ -94,3 +94,8 @@ node /raspberrypi.*/ {
   include ganglia
   include ganglia::client
 }
+
+node default {
+  include base
+  include ssh_keys
+}
