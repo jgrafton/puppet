@@ -74,7 +74,7 @@ class hosts::config {
   
   # Sara's iMac
   host { 'saramac.tino':
-    ip           => '192.168.1.52',
+    ip           => '192.168.1.57',
     host_aliases => 'saramac',
   }
 }
