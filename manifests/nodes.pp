@@ -1,3 +1,5 @@
+# Puppet nodes for grafton household
+
 class base {
   include banner
   include profile
