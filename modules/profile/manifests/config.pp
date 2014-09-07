@@ -1,3 +1,5 @@
+# profile::config
+# configure login profile for users
 class profile::config {
   $user='jgrafton'
 
@@ -5,7 +7,7 @@ class profile::config {
     darwin: {
       include profile::config_osx
     }
-    solaris: { 
+    solaris: {
       include profile::config_solaris
     }
     debian: {
@@ -14,7 +16,7 @@ class profile::config {
     centOS: {
       include profile::config_linux
     }
-    default: { 
+    default: {
       include profile::config_linux
     }
   }
