@@ -1,3 +1,4 @@
+# banner::init
 class banner {
   case $::hardwaremodel {
     armv6l: {
