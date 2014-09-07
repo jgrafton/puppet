@@ -1,3 +1,5 @@
+# hosts::config
+# configure /etc/hosts file
 class hosts::config {
 
   # amazon cloud
@@ -66,12 +68,12 @@ class hosts::config {
     host_aliases => 'debian',
   }
 
-  # openindiana 
+  # openindiana
   host { 'oi.tino':
     ip           => '192.168.1.204',
     host_aliases => 'oi',
   }
-  
+
   # Sara's iMac
   host { 'saramac.tino':
     ip           => '192.168.1.57',
