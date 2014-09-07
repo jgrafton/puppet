@@ -1,11 +1,12 @@
+# users::config
 class users::config {
   case $::operatingsystem {
     darwin: {
     }
     default: {
-      user { "jgrafton":
+      user { 'jgrafton':
         ensure => present,
-        shell  => "/bin/bash",
+        shell  => '/bin/bash',
       }
     }
   }
