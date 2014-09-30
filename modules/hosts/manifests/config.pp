@@ -50,6 +50,24 @@ class hosts::config {
     host_aliases => 'sebian',
   }
 
+  # shell
+  host { 'shell.tino':
+    ip           => '192.168.1.197',
+    host_aliases => 'shell',
+  }
+
+  # webdav
+  host { 'webdav.tino':
+    ip           => '192.168.1.198',
+    host_aliases => 'webdav',
+  }
+
+  # storhost
+  host { 'storhost.tino':
+    ip           => '192.168.1.199',
+    host_aliases => 'storhost',
+  }
+
   # megaman
   host { 'megaman.tino':
     ip           => '192.168.1.201',
