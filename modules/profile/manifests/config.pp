@@ -4,19 +4,19 @@ class profile::config {
   $user='jgrafton'
 
   case $::operatingsystem {
-    Darwin: {
+    darwin: {
       include profile::config_osx
     }
-    Solaris: {
+    solaris: {
       include profile::config_solaris
     }
-    Debian: {
+    debian: {
       include profile::config_linux
     }
-    CentOS: {
+    centos: {
       include profile::config_linux
     }
-    FreeBSD: {
+    freebsd: {
       include profile::config_freebsd
     }
     default: {
