@@ -4,7 +4,7 @@ class ssh_keys::config {
   $user = 'jgrafton'
 
   case $::operatingsystem {
-    darwin: { $home_dir = "/Users/${user}" }
+    Darwin: { $home_dir = "/Users/${user}" }
     default: { $home_dir = "/home/${user}" }
   }
 
