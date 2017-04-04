@@ -1,13 +1,17 @@
 # users::config
 class users::config {
   case $::operatingsystem {
-    darwin: {
+    Darwin: {
+    }
+    Debian: {
+    }
+    FreeBSD: {
     }
     default: {
-      user { 'jgrafton':
-        ensure => present,
-        shell  => '/bin/bash',
-      }
+      #      user { 'jgrafton':
+      #  ensure => present,
+      #  shell  => '/bin/bash',
+      #}
     }
   }
 }
