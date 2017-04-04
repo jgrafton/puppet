@@ -4,16 +4,9 @@
 class base {
   include banner
   include profile
-  include users
 }
 
 ### cloud vms
-# amazon cloud
-node /ip-10-170-22-206/ {
-  include ssh_keys
-  include base
-}
-
 # joyent cloud
 node /6dab87a4-e83e-4f9f-8748-48ff53056070.*/ {
   include ssh_keys
@@ -21,18 +14,10 @@ node /6dab87a4-e83e-4f9f-8748-48ff53056070.*/ {
 }
 
 ### home vms
-# joyent smartos zone on orion
-node /megaman.*/ {
-  include ssh_keys
-  include base
-}
-
 # squeeze vm on Sara's iMac
 node /sebian.*/ {
   include ssh_keys
   include base
-  include ganglia
-  include ganglia::client
 }
 
 # squeeze vm on orion
@@ -70,7 +55,7 @@ node /oi.*/ {
 #  include ganglia::client 
 #}
 
-# pod OpenIndiana development workstation
+# pod debian linux workstation
 node /pod/ {
   include base
   include ssh_keys
