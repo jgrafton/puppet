@@ -5,7 +5,6 @@ class base {
   include banner
   include profile
   include users
-  include hosts
 }
 
 ### cloud vms
