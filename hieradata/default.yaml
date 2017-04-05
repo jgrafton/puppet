@@ -1,0 +1,18 @@
+---
+accounts::users:
+        jgrafton:
+                uid: 1000
+                comment: John Grafton
+        sgrafton:
+                uid: 2000
+                comment: Sara Grafton
+        ninja:
+                uid: 3000
+                comment: Alexander Grafton
+
+accounts::usergroups:
+        stor:
+                - jgrafton
+                - sgrafton
+                - ninja
+
