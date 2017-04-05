@@ -1,0 +1,50 @@
+{
+  "name": "camptocamp-accounts",
+  "version": "1.9.0",
+  "author": "camptocamp",
+  "summary": "Puppet module for Managing SSH keys, users and groups",
+  "license": "Apache-2.0",
+  "source": "git://github.com/camptocamp/puppet-accounts.git",
+  "project_page": "https://github.com/camptocamp/puppet-accounts",
+  "issues_url": "https://github.com/camptocamp/puppet-accounts/issues",
+  "dependencies": [
+    {"name":"puppetlabs/stdlib","version_requirement":">=3.2.0 <5.0.0"}
+  ],
+  "data_provider": null,
+  "requirements": [
+    {
+      "name": "pe",
+      "version_requirement": "4.x"
+    },
+    {
+      "name": "puppet",
+      "version_requirement": "4.x"
+    }
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Debian",
+      "operatingsystemrelease": [
+        "6",
+        "7",
+        "8"
+      ]
+    },
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [
+        "10.04",
+        "12.04",
+        "14.04"
+      ]
+    },
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "5",
+        "6",
+        "7"
+      ]
+    }
+  ]
+}
