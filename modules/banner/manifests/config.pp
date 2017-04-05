@@ -3,7 +3,7 @@
 class banner::config {
   file { '/etc/motd':
     owner   => 'root',
-    group   => 'root',
+    group   => 'wheel',
     mode    => '0644',
     content => template('banner/motd.erb'),
   }
