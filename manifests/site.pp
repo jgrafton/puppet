@@ -3,6 +3,11 @@
 # base class
 class base {
   include banner
+	class { 'accounts':
+		ssh_keys   => hiera_hash('accounts::ssh_keys', {}),
+		users      => hiera_hash('accounts::users', {}),
+		usergroups => hiera_hash('accounts::usergroups', {}),
+	}
 # include ssh_keys
 # include profile
 # include users
