@@ -8,6 +8,11 @@ class base {
 		users      => hiera_hash('accounts::users', {}),
 		usergroups => hiera_hash('accounts::usergroups', {}),
 	}
+  file {'/tmp/example-ip':
+    ensure  => present,
+    mode    => '0644',
+    content => "Here is my IP: ${ipaddress}.\n",
+  }
 # include ssh_keys
 # include profile
 # include users
