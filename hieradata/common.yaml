@@ -1,4 +1,15 @@
 ---
+accounts::ssh_keys:
+  jgrafton:
+    type: ssh-rsa
+    public: FOO-S-RSA-PUBLIC-KEY
+  sgrafton:
+    type: ssh-rsa
+    public: BAR-S-RSA-PUBLIC-KEY
+ninja:
+    type: ssh-rsa
+    public: NINJA-S-RSA-PUBLIC-KEY
+
 accounts::users:
   jgrafton:
     uid: 1000
