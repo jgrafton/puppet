@@ -4,11 +4,11 @@
 class base {
   class { 'banner': }
   class { 'vim': }
-	class { 'accounts':
+  class { 'accounts':
     ssh_keys   => lookup('accounts::ssh_keys', {merge => hash}),
     users      => lookup('accounts::users', {merge => hash}),
     usergroups => lookup('accounts::usergroups', {merge => hash}),
-	}
+  }
   accounts::account { 'sgrafton': }
   accounts::account { 'ninja': }
 

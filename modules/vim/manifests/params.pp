@@ -28,10 +28,11 @@ class vim::params {
       $conf            = '/etc/vimrc'
     }
     'FreeBSD': {
-      $package         = 'vim-lite'
+      $package         = 'vim'
       $set_as_default  = false
       $set_editor_cmd  = undef
       $test_editor_set = undef
+      $conf            = '/usr/local/etc/vim/vimrc'
     }
     'Suse': {
       $package         = 'vim'
