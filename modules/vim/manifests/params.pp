@@ -11,6 +11,7 @@ class vim::params {
   $misc         = ['hlsearch','showcmd','showmatch','ignorecase','smartcase','incsearch','autowrite','hidden']
   $maps         = {}
   $code         = []
+  $pathogen     = false
   case $::osfamily {
     'Debian': {
       $package         = 'vim-nox'
