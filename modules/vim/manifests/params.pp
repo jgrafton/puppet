@@ -34,6 +34,7 @@ class vim::params {
       $set_editor_cmd  = undef
       $test_editor_set = undef
       $conf            = '/usr/local/etc/vim/vimrc'
+      $pathogen_file   = '/usr/local/share/vim/vim80/autoload/pathogen.vim'
     }
     'Suse': {
       $package         = 'vim'

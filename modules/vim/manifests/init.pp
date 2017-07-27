@@ -139,6 +139,11 @@ class vim(
     content => template('vim/vimrc.erb'),
   }
 
+  file { $pathogen_file:
+    ensure  => exists,
+    content => template('vim/pathogen.vim.erb'),
+  }
+
   if $set_as_default and $set_editor_cmd {
     exec { $set_editor_cmd:
       path    => '/bin:/sbin:/usr/bin:/usr/sbin',
