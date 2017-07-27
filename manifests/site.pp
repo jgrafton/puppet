@@ -3,7 +3,11 @@
 # base class
 class base {
   class { 'banner': }
-  class { 'vim': }
+  class { 'vim':
+    opt_pathogen => true,
+    opt_code     => ['highlight OverLength ctermbg=red ctermfg=white guibg=#592929',
+                     'match OverLength /\%81v.\+/' ],
+  }
   class { 'accounts':
     ssh_keys   => lookup('accounts::ssh_keys', {merge => hash}),
     users      => lookup('accounts::users', {merge => hash}),
