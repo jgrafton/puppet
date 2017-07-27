@@ -139,9 +139,10 @@ class vim(
     content => template('vim/vimrc.erb'),
   }
 
-  file { $pathogen_file:
-    ensure  => exists,
-    content => template('vim/pathogen.vim.erb'),
+  if $opt_pathogen {
+    file { $pathogen_file:
+      content => template('vim/pathogen.vim.erb'),
+    }
   }
 
   if $set_as_default and $set_editor_cmd {
