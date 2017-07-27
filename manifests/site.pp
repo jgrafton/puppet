@@ -2,7 +2,8 @@
 
 # base class
 class base {
-  include banner
+  class { 'banner': }
+  class { 'vim': }
 	class { 'accounts':
     ssh_keys   => lookup('accounts::ssh_keys', {merge => hash}),
     users      => lookup('accounts::users', {merge => hash}),
